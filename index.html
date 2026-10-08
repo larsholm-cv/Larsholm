@@ -4,65 +4,69 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lars Holm — Procurement Specialist</title>
-  <meta name="description" content="Procurement specialist in direct materials, supplier development, category management and sourcing strategy.">
+  <meta name="description" content="Procurement specialist in direct materials, supplier strategy, supplier development and category management.">
   <meta property="og:title" content="Lars Holm — Procurement Specialist">
   <meta property="og:description" content="Procurement Specialist | Category Management | Supplier Development">
   <meta property="og:url" content="https://larsholm-cv.github.io/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232d5a3d'/%3E%3Ctext x='32' y='42' font-family='system-ui' font-size='32' font-weight='700' fill='%23fff' text-anchor='middle'%3ELH%3C/text%3E%3C/svg%3E">
   <style>
     :root {
-      --bg: #f4f1ea;
-      --bg-2: #faf8f4;
-      --panel: rgba(255,255,255,0.72);
+      --bg: #f4efe8;
+      --bg-2: #faf7f2;
+      --panel: rgba(255,255,255,0.80);
       --panel-solid: #ffffff;
-      --panel-soft: #f5f7f4;
-      --line: rgba(26, 31, 27, 0.10);
-      --text: #171d1a;
-      --muted: #55615d;
+      --panel-soft: #f3f5f1;
+      --line: rgba(20,28,24,0.10);
+      --text: #141b18;
+      --muted: #586762;
       --accent: #2d5a3d;
-      --accent-soft: #4d7e61;
-      --accent-strong: #1d3d2d;
-      --shadow: 0 18px 48px rgba(20, 29, 25, 0.08);
-      --chip: rgba(45,90,61,0.08);
+      --accent-soft: #547c62;
+      --accent-strong: #1a352a;
+      --shadow: 0 18px 50px rgba(20,29,25,0.10);
+      --chip: rgba(45,90,61,0.09);
+      --success: #e7efe9;
+      --portrait-gradient: linear-gradient(135deg, #d9d1c4 0%, #bdb1a1 35%, #f5efe9 100%);
     }
 
     body[data-theme="dark"] {
-      --bg: #0f1412;
-      --bg-2: #121a17;
-      --panel: rgba(17,23,21,0.82);
-      --panel-solid: #141d19;
-      --panel-soft: #111b18;
+      --bg: #0e1412;
+      --bg-2: #111a17;
+      --panel: rgba(18,24,21,0.82);
+      --panel-solid: #151e1a;
+      --panel-soft: #111d19;
       --line: rgba(255,255,255,0.08);
       --text: #edf4ee;
-      --muted: #b0bbb4;
-      --accent: #a5d0b0;
-      --accent-soft: #c7dec9;
-      --accent-strong: #dcefe1;
-      --shadow: 0 18px 48px rgba(0,0,0,0.38);
-      --chip: rgba(165,208,176,0.12);
+      --muted: #b4bdb7;
+      --accent: #a7d0b3;
+      --accent-soft: #cfe8d5;
+      --accent-strong: #edf8f0;
+      --shadow: 0 18px 50px rgba(0,0,0,0.35);
+      --chip: rgba(167,208,179,0.12);
+      --success: rgba(167,208,179,0.12);
+      --portrait-gradient: linear-gradient(135deg, #252e2a 0%, #455650 35%, #a4a6a4 100%);
     }
 
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
       background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
       color: var(--text);
       line-height: 1.7;
       transition: background 0.25s ease, color 0.25s ease;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     }
 
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
+    img { max-width: 100%; display: block; }
 
-    img { display: block; max-width: 100%; }
-
-    .container {
-      max-width: 1120px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
+    .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
 
     header {
       position: sticky;
@@ -73,25 +77,23 @@
       backdrop-filter: blur(14px);
     }
 
-    body[data-theme="dark"] header {
-      background: rgba(15,20,18,0.68);
-    }
+    body[data-theme="dark"] header { background: rgba(14,20,18,0.78); }
 
     .topbar {
-      max-width: 1120px;
+      max-width: 1180px;
       margin: 0 auto;
       padding: 18px 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 20px;
+      gap: 18px;
     }
 
     .logo {
-      font-weight: 800;
-      letter-spacing: 0.16em;
+      font-weight: 900;
+      letter-spacing: 0.18em;
       color: var(--accent);
-      font-size: 0.95rem;
+      font-size: 0.90rem;
       text-transform: uppercase;
     }
 
@@ -104,12 +106,12 @@
     nav {
       display: flex;
       align-items: center;
-      gap: 26px;
+      gap: 22px;
       flex-wrap: wrap;
     }
 
     nav a {
-      font-size: 0.92rem;
+      font-size: 0.90rem;
       color: var(--muted);
       font-weight: 600;
     }
@@ -132,10 +134,11 @@
       color: var(--muted);
       padding: 8px 10px;
       border-radius: 999px;
-      font-size: 0.8rem;
-      font-weight: 700;
+      font-size: 0.76rem;
+      font-weight: 800;
       cursor: pointer;
       transition: all 0.2s ease;
+      letter-spacing: 0.04em;
     }
 
     .lang-btn.active, .theme-btn.active {
@@ -154,7 +157,7 @@
     }
 
     .hero {
-      padding: 64px 0 42px;
+      padding: 56px 0 42px;
       position: relative;
       overflow: hidden;
     }
@@ -162,17 +165,17 @@
     .hero::before {
       content: "";
       position: absolute;
-      width: 560px;
-      height: 560px;
-      background: radial-gradient(circle, rgba(45,90,61,0.15), transparent 60%);
-      right: -160px;
-      top: -80px;
+      width: 640px;
+      height: 640px;
+      right: -150px;
+      top: -150px;
+      background: radial-gradient(circle, rgba(45,90,61,0.12), transparent 60%);
       pointer-events: none;
     }
 
     .hero-inner {
       display: grid;
-      grid-template-columns: 1.4fr 0.8fr;
+      grid-template-columns: 1.35fr 0.85fr;
       gap: 36px;
       align-items: center;
       position: relative;
@@ -181,27 +184,27 @@
 
     .eyebrow {
       display: inline-block;
+      margin-bottom: 14px;
       color: var(--accent);
       font-size: 0.76rem;
-      letter-spacing: 0.16em;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
       font-weight: 800;
-      margin-bottom: 14px;
     }
 
     h1 {
-      font-size: clamp(2.9rem, 5vw, 5rem);
-      line-height: 0.98;
-      letter-spacing: -0.08em;
       margin: 0;
+      font-size: clamp(3.1rem, 6vw, 5.4rem);
+      line-height: 0.96;
+      letter-spacing: -0.09em;
       color: var(--text);
     }
 
-    .lead {
-      margin-top: 18px;
-      font-size: 1.12rem;
-      max-width: 640px;
+    .lede {
+      margin: 18px 0 0;
+      max-width: 660px;
       color: var(--muted);
+      font-size: 1.12rem;
     }
 
     .cta-row {
@@ -216,7 +219,7 @@
       align-items: center;
       justify-content: center;
       border-radius: 999px;
-      padding: 0.92rem 1.5rem;
+      padding: 0.92rem 1.42rem;
       font-weight: 700;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
       border: 1px solid transparent;
@@ -226,8 +229,8 @@
 
     .btn-primary {
       background: linear-gradient(135deg, var(--accent) 0%, var(--accent-soft) 100%);
-      color: white;
-      box-shadow: 0 14px 26px rgba(45,90,61,0.18);
+      color: #fff;
+      box-shadow: 0 18px 28px rgba(45,90,61,0.20);
     }
 
     .btn-secondary {
@@ -236,75 +239,66 @@
       color: var(--text);
     }
 
-    .hero-card {
+    .portrait-panel {
       background: var(--panel);
       border: 1px solid var(--line);
-      border-radius: 28px;
+      border-radius: 30px;
+      padding: 20px;
       box-shadow: var(--shadow);
-      padding: 24px;
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(8px);
     }
 
-    .profile-row {
+    .portrait-card {
+      background: var(--portrait-gradient);
+      border-radius: 24px;
+      min-height: 440px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.25);
+    }
+
+    .portrait-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url('assets/portrait.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.9;
+    }
+
+    .portrait-card::after {
+      content: "LH";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: clamp(2rem, 6vw, 4rem);
+      font-weight: 900;
+      letter-spacing: 0.18em;
+      color: rgba(255,255,255,0.75);
+      text-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      opacity: 0;
+    }
+
+    .portrait-card.empty::before { opacity: 0; }
+    .portrait-card.empty::after { opacity: 1; }
+
+    .tiny-meta {
       display: flex;
-      align-items: center;
-      gap: 18px;
-      margin-bottom: 22px;
-    }
-
-    .avatar {
-      width: 72px;
-      height: 72px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      color: white;
-      font-weight: 800;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 0.76rem;
       letter-spacing: 0.08em;
-      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-soft) 100%);
-      box-shadow: 0 14px 26px rgba(45,90,61,0.18);
-    }
-
-    .profile-row h3 {
-      margin: 0;
-      font-size: 1.25rem;
-    }
-
-    .profile-row p {
-      margin: 4px 0 0;
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(120px,1fr));
-      gap: 14px;
-    }
-
-    .stat {
-      background: var(--panel-soft);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 16px 14px;
-      min-height: 104px;
-    }
-
-    .stat strong {
-      display: block;
-      font-size: 1.38rem;
-      line-height: 1.1;
-      margin-bottom: 6px;
-      color: var(--accent-strong);
-    }
-
-    .stat span {
-      color: var(--muted);
-      font-size: 0.78rem;
+      text-transform: uppercase;
+      font-weight: 700;
     }
 
     section {
-      padding: 54px 0;
+      padding: 56px 0;
     }
 
     .section-kicker {
@@ -318,8 +312,9 @@
 
     h2 {
       margin: 0 0 24px;
-      font-size: clamp(2rem,3vw,2.7rem);
+      font-size: clamp(2rem, 3vw, 2.8rem);
       letter-spacing: -0.06em;
+      color: var(--text);
     }
 
     .card-stack {
@@ -330,16 +325,16 @@
     .card {
       background: var(--panel);
       border: 1px solid var(--line);
-      border-radius: 22px;
-      box-shadow: 0 10px 24px rgba(17,20,18,0.03);
-      padding: 22px 22px 20px;
-      backdrop-filter: blur(6px);
+      border-radius: 24px;
+      padding: 24px 22px 20px;
+      box-shadow: 0 8px 18px rgba(16,22,19,0.02);
+      backdrop-filter: blur(8px);
     }
 
     .job-head {
       display: flex;
       justify-content: space-between;
-      align-items: start;
+      align-items: flex-start;
       gap: 16px;
       margin-bottom: 8px;
     }
@@ -351,7 +346,7 @@
 
     .meta {
       color: var(--muted);
-      font-size: 0.9rem;
+      font-size: 0.90rem;
       margin-bottom: 10px;
     }
 
@@ -368,11 +363,11 @@
     }
 
     .skill {
-      border-radius: 24px;
       background: var(--panel);
       border: 1px solid var(--line);
+      border-radius: 22px;
       padding: 22px 20px;
-      box-shadow: 0 10px 24px rgba(17,20,18,0.03);
+      box-shadow: 0 8px 18px rgba(16,22,19,0.02);
     }
 
     .skill strong {
@@ -408,8 +403,8 @@
     }
 
     .edu-list li:last-child {
-      padding-bottom: 0;
       border-bottom: none;
+      padding-bottom: 0;
     }
 
     .edu-list strong {
@@ -424,16 +419,16 @@
     }
 
     .cert-block {
-      padding: 22px;
-      border-radius: 22px;
       background: var(--panel);
       border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 22px;
     }
 
     .cert-block strong {
       display: block;
+      margin-bottom: 16px;
       color: var(--accent-strong);
-      margin-bottom: 14px;
       font-size: 1rem;
     }
 
@@ -442,6 +437,9 @@
       gap: 10px;
       color: var(--muted);
       font-size: 0.96rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
 
     .contact-wrap {
@@ -451,48 +449,51 @@
     }
 
     .contact-item {
+      min-width: 220px;
       background: var(--panel);
       border: 1px solid var(--line);
       border-radius: 20px;
-      padding: 16px 18px;
-      min-width: 220px;
-      box-shadow: 0 10px 24px rgba(17,20,18,0.03);
+      padding: 18px 18px 16px;
+      box-shadow: 0 8px 18px rgba(16,22,19,0.02);
     }
 
     .contact-item span {
       display: block;
-      margin-bottom: 8px;
       color: var(--muted);
       text-transform: uppercase;
       letter-spacing: 0.12em;
-      font-size: 0.7rem;
+      font-size: 0.70rem;
       font-weight: 800;
+      margin-bottom: 8px;
     }
 
     .contact-item a {
-      font-weight: 600;
+      font-weight: 700;
     }
 
     footer {
-      padding: 14px 0 52px;
+      padding: 18px 0 54px;
       text-align: center;
       color: var(--muted);
-      font-size: 0.9rem;
+      font-size: 0.88rem;
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 940px) {
       .hero-inner,
       .edu-grid,
       .skills-grid {
         grid-template-columns: 1fr;
       }
+
+      .portrait-card {
+        min-height: 360px;
+      }
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 660px) {
       nav { display: none; }
       .topbar { padding-left: 18px; padding-right: 18px; }
       .cta-row { flex-direction: column; align-items: flex-start; }
-      .stats-grid { grid-template-columns: 1fr 1fr; }
       .job-head { flex-direction: column; }
     }
   </style>
@@ -522,56 +523,47 @@
     <section class="hero">
       <div class="container hero-inner">
         <div>
-          <div class="eyebrow">Procurement Specialist · Horsens, Denmark</div>
-          <h1>Lars Holm</h1>
-          <p class="lead">Direct-materials buyer at Idealcombi A/S with 10+ years in procurement and category management. Focused on supplier development, sourcing strategy, and cost optimization.</p>
+          <div class="eyebrow" data-i18n="hero.location">Procurement Specialist · Horsens, Denmark</div>
+          <h1 data-i18n="hero.name">Lars Holm</h1>
+          <p class="lede" data-i18n="hero.lead">Direct-materials buyer at Idealcombi A/S with 10+ years in procurement and category management. Focused on supplier development, sourcing strategy, and cost optimization.</p>
           <div class="cta-row">
-            <a class="btn btn-primary" href="#experience">View experience</a>
-            <a class="btn btn-secondary" href="mailto:hello@larsholm.dk?subject=Email%20me" title="Email me">Email me</a>
+            <a class="btn btn-primary" href="#experience" data-i18n="hero.cta_primary">View experience</a>
+            <a class="btn btn-secondary" href="mailto:hello@larsholm.dk?subject=Email%20me" title="Email me" data-i18n="hero.cta_secondary">Email me</a>
           </div>
         </div>
 
-        <aside class="hero-card">
-          <div class="profile-row">
-            <div class="avatar">LH</div>
-            <div>
-              <h3>Lars Holm</h3>
-              <p>Procurement Specialist</p>
-            </div>
+        <div class="portrait-panel">
+          <div class="portrait-card empty" id="portraitCard" aria-label="Lars Holm portrait"></div>
+          <div class="tiny-meta">
+            <span data-i18n="profile.role">Procurement Specialist</span>
+            <span data-i18n="profile.location">Horsens</span>
           </div>
-
-          <div class="stats-grid">
-            <div class="stat"><strong>10+</strong><span>Years in procurement</span></div>
-            <div class="stat"><strong>4</strong><span>Key categories</span></div>
-            <div class="stat"><strong>2021</strong><span>Idealcombi A/S</span></div>
-            <div class="stat"><strong>DA/EN/DE</strong><span>Languages</span></div>
-          </div>
-        </aside>
+        </div>
       </div>
     </section>
 
     <section id="experience">
       <div class="container">
-        <p class="section-kicker">Career</p>
-        <h2>Experience</h2>
+        <p class="section-kicker" data-i18n="experience.kicker">Career</p>
+        <h2 data-i18n="experience.title">Experience</h2>
 
         <div class="card-stack">
           <article class="card">
-            <div class="job-head"><h3>Procurement Specialist — Direct Materials</h3></div>
-            <div class="meta">Idealcombi A/S, Horsens · May 2021 – present</div>
-            <p class="job-copy">Responsible for sourcing glass, aluminium, timber, and hardware for window production. Managing supplier relationships, contract negotiation, RFQ processes, and ESG compliance including FSC chain-of-custody and CBAM documentation.</p>
+            <div class="job-head"><h3 data-i18n="job1.title">Procurement Specialist — Direct Materials</h3></div>
+            <div class="meta" data-i18n="job1.meta">Idealcombi A/S, Horsens · May 2021 – present</div>
+            <p class="job-copy" data-i18n="job1.text">Responsible for sourcing glass, aluminium, timber, and hardware for window production. Managing supplier relationships, contract negotiation, RFQ processes, and ESG compliance including FSC chain-of-custody and CBAM documentation.</p>
           </article>
 
           <article class="card">
-            <div class="job-head"><h3>Category Buyer / Senior Purchasing Assistant</h3></div>
-            <div class="meta">Danco Byggesystemer A/S, Odense · 2016 – 2021</div>
-            <p class="job-copy">Purchased aluminium profiles for facade windows and introduced supplier scorecards, OTIF reporting, and landed-cost-based evaluation to improve sourcing performance.</p>
+            <div class="job-head"><h3 data-i18n="job2.title">Category Buyer / Senior Purchasing Assistant</h3></div>
+            <div class="meta" data-i18n="job2.meta">Danco Byggesystemer A/S, Odense · 2016 – 2021</div>
+            <p class="job-copy" data-i18n="job2.text">Purchased aluminium profiles for facade windows and introduced supplier scorecards, OTIF reporting, and landed-cost-based evaluation to improve sourcing performance.</p>
           </article>
 
           <article class="card">
-            <div class="job-head"><h3>Purchasing Assistant</h3></div>
-            <div class="meta">Vestergaard Stål & Profil A/S, Vejle · 2012 – 2016</div>
-            <p class="job-copy">Handled order coordination, supplier claims, and stock management for steel and aluminium profiles in a production-focused environment.</p>
+            <div class="job-head"><h3 data-i18n="job3.title">Purchasing Assistant</h3></div>
+            <div class="meta" data-i18n="job3.meta">Vestergaard Stål & Profil A/S, Vejle · 2012 – 2016</div>
+            <p class="job-copy" data-i18n="job3.text">Handled order coordination, supplier claims, and stock management for steel and aluminium profiles in a production-focused environment.</p>
           </article>
         </div>
       </div>
@@ -579,41 +571,41 @@
 
     <section id="skills">
       <div class="container">
-        <p class="section-kicker">Expertise</p>
-        <h2>Core Skills</h2>
+        <p class="section-kicker" data-i18n="skills.kicker">Expertise</p>
+        <h2 data-i18n="skills.title">Core Skills</h2>
 
         <div class="skills-grid">
-          <div class="skill"><strong>Category Management</strong><p>Strategic sourcing and category planning for direct materials in manufacturing.</p></div>
-          <div class="skill"><strong>Supplier Development</strong><p>Scorecards, supplier audits, OTIF improvement, and structured claim handling.</p></div>
-          <div class="skill"><strong>Contract Negotiation</strong><p>Frame agreements and landed-cost-based evaluations for better purchasing outcomes.</p></div>
-          <div class="skill"><strong>ESG &amp; Compliance</strong><p>FSC chain-of-custody, scope-3 data collection, and CBAM documentation support.</p></div>
-          <div class="skill"><strong>Cost Optimization</strong><p>Value engineering, specification harmonization, and material substitution.</p></div>
-          <div class="skill"><strong>Systems &amp; Tools</strong><p>SAP MM, SAP Ariba, Power BI analytics, and advanced Excel reporting.</p></div>
+          <div class="skill"><strong data-i18n="skill1.title">Category Management</strong><p data-i18n="skill1.text">Strategic sourcing and category planning for direct materials in manufacturing.</p></div>
+          <div class="skill"><strong data-i18n="skill2.title">Supplier Development</strong><p data-i18n="skill2.text">Scorecards, supplier audits, OTIF improvement, and structured claim handling.</p></div>
+          <div class="skill"><strong data-i18n="skill3.title">Contract Negotiation</strong><p data-i18n="skill3.text">Frame agreements and landed-cost-based evaluations for better purchasing outcomes.</p></div>
+          <div class="skill"><strong data-i18n="skill4.title">ESG &amp; Compliance</strong><p data-i18n="skill4.text">FSC chain-of-custody, scope-3 data collection, and CBAM documentation support.</p></div>
+          <div class="skill"><strong data-i18n="skill5.title">Cost Optimization</strong><p data-i18n="skill5.text">Value engineering, specification harmonization, and material substitution.</p></div>
+          <div class="skill"><strong data-i18n="skill6.title">Systems &amp; Tools</strong><p data-i18n="skill6.text">SAP MM, SAP Ariba, Power BI analytics, and advanced Excel reporting.</p></div>
         </div>
       </div>
     </section>
 
     <section id="education">
       <div class="container">
-        <p class="section-kicker">Credentials</p>
-        <h2>Education &amp; Certifications</h2>
+        <p class="section-kicker" data-i18n="education.kicker">Credentials</p>
+        <h2 data-i18n="education.title">Education &amp; Certifications</h2>
 
         <div class="edu-grid">
           <div class="card">
             <ul class="edu-list">
-              <li><strong>HD in Supply Chain Management</strong><span>Aarhus BSS, 2014–2017</span></li>
-              <li><strong>Logistikøkonom (AP degree)</strong><span>UCL Erhvervsakademi, 2009–2012</span></li>
-              <li><strong>HHX</strong><span>Vejle Business College, 2004–2007</span></li>
+              <li><strong data-i18n="edu1.title">HD in Supply Chain Management</strong><span data-i18n="edu1.meta">Aarhus BSS, 2014–2017</span></li>
+              <li><strong data-i18n="edu2.title">Logistikøkonom (AP degree)</strong><span data-i18n="edu2.meta">UCL Erhvervsakademi, 2009–2012</span></li>
+              <li><strong data-i18n="edu3.title">HHX</strong><span data-i18n="edu3.meta">Vejle Business College, 2004–2007</span></li>
             </ul>
           </div>
 
           <div class="cert-block">
-            <strong>Certifications</strong>
-            <div class="cert-list">
-              <div>ISO 9001:2015 &amp; 14001:2015 Internal Auditor</div>
-              <div>DIEF Operational Procurement</div>
-              <div>Niels Brock Negotiation Training</div>
-            </div>
+            <strong data-i18n="cert.title">Certifications</strong>
+            <ul class="cert-list">
+              <li data-i18n="cert1">ISO 9001:2015 &amp; 14001:2015 Internal Auditor</li>
+              <li data-i18n="cert2">DIEF Operational Procurement</li>
+              <li data-i18n="cert3">Niels Brock Negotiation Training</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -621,16 +613,16 @@
 
     <section id="contact">
       <div class="container">
-        <p class="section-kicker">Get in touch</p>
-        <h2>Contact</h2>
+        <p class="section-kicker" data-i18n="contact.kicker">Get in touch</p>
+        <h2 data-i18n="contact.title">Contact</h2>
 
         <div class="contact-wrap">
           <div class="contact-item">
-            <span>Email</span>
-            <a href="mailto:hello@larsholm.dk?subject=Email%20me" title="Email me">Email me</a>
+            <span data-i18n="contact.email_label">Email</span>
+            <a href="mailto:hello@larsholm.dk?subject=Email%20me" title="Email me" data-i18n="contact.email_value">Email me</a>
           </div>
           <div class="contact-item">
-            <span>Phone</span>
+            <span data-i18n="contact.phone_label">Phone</span>
             <a href="tel:+4526448719">+45 26 44 87 19</a>
           </div>
         </div>
@@ -641,20 +633,211 @@
   <footer>© <span id="year"></span> Lars Holm · Procurement Specialist</footer>
 
   <script>
-    const themeToggle = document.getElementById('themeToggle');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const savedTheme = localStorage.getItem('cv-theme') || (prefersDark ? 'dark' : 'light');
-    document.body.setAttribute('data-theme', savedTheme);
-    themeToggle.textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+    const translations = {
+      en: {
+        'hero.location': 'Procurement Specialist · Horsens, Denmark',
+        'hero.name': 'Lars Holm',
+        'hero.lead': 'Direct-materials buyer at Idealcombi A/S with 10+ years in procurement and category management. Focused on supplier development, sourcing strategy, and cost optimization.',
+        'hero.cta_primary': 'View experience',
+        'hero.cta_secondary': 'Email me',
+        'profile.role': 'Procurement Specialist',
+        'profile.location': 'Horsens',
+        'experience.kicker': 'Career',
+        'experience.title': 'Experience',
+        'job1.title': 'Procurement Specialist — Direct Materials',
+        'job1.meta': 'Idealcombi A/S, Horsens · May 2021 – present',
+        'job1.text': 'Responsible for sourcing glass, aluminium, timber, and hardware for window production. Managing supplier relationships, contract negotiation, RFQ processes, and ESG compliance including FSC chain-of-custody and CBAM documentation.',
+        'job2.title': 'Category Buyer / Senior Purchasing Assistant',
+        'job2.meta': 'Danco Byggesystemer A/S, Odense · 2016 – 2021',
+        'job2.text': 'Purchased aluminium profiles for facade windows and introduced supplier scorecards, OTIF reporting, and landed-cost-based evaluation to improve sourcing performance.',
+        'job3.title': 'Purchasing Assistant',
+        'job3.meta': 'Vestergaard Stål & Profil A/S, Vejle · 2012 – 2016',
+        'job3.text': 'Handled order coordination, supplier claims, and stock management for steel and aluminium profiles in a production-focused environment.',
+        'skills.kicker': 'Expertise',
+        'skills.title': 'Core Skills',
+        'skill1.title': 'Category Management',
+        'skill1.text': 'Strategic sourcing and category planning for direct materials in manufacturing.',
+        'skill2.title': 'Supplier Development',
+        'skill2.text': 'Scorecards, supplier audits, OTIF improvement, and structured claim handling.',
+        'skill3.title': 'Contract Negotiation',
+        'skill3.text': 'Frame agreements and landed-cost-based evaluations for better purchasing outcomes.',
+        'skill4.title': 'ESG & Compliance',
+        'skill4.text': 'FSC chain-of-custody, scope-3 data collection, and CBAM documentation support.',
+        'skill5.title': 'Cost Optimization',
+        'skill5.text': 'Value engineering, specification harmonization, and material substitution.',
+        'skill6.title': 'Systems & Tools',
+        'skill6.text': 'SAP MM, SAP Ariba, Power BI analytics, and advanced Excel reporting.',
+        'education.kicker': 'Credentials',
+        'education.title': 'Education & Certifications',
+        'edu1.title': 'HD in Supply Chain Management',
+        'edu1.meta': 'Aarhus BSS, 2014–2017',
+        'edu2.title': 'Logistikøkonom (AP degree)',
+        'edu2.meta': 'UCL Erhvervsakademi, 2009–2012',
+        'edu3.title': 'HHX',
+        'edu3.meta': 'Vejle Business College, 2004–2007',
+        'cert.title': 'Certifications',
+        'cert1': 'ISO 9001:2015 & 14001:2015 Internal Auditor',
+        'cert2': 'DIEF Operational Procurement',
+        'cert3': 'Niels Brock Negotiation Training',
+        'contact.kicker': 'Get in touch',
+        'contact.title': 'Contact',
+        'contact.email_label': 'Email',
+        'contact.email_value': 'Email me',
+        'contact.phone_label': 'Phone'
+      },
+      da: {
+        'hero.location': 'Indkøbspecialist · Horsens, Danmark',
+        'hero.name': 'Lars Holm',
+        'hero.lead': 'Direkte materialer-køber hos Idealcombi A/S med 10+ års erfaring inden for indkøb og kategoristyring. Fokus på leverandørudvikling, sourcing-strategi og omkostningsoptimering.',
+        'hero.cta_primary': 'Se erfaring',
+        'hero.cta_secondary': 'Send e-mail',
+        'profile.role': 'Indkøbspecialist',
+        'profile.location': 'Horsens',
+        'experience.kicker': 'Karriere',
+        'experience.title': 'Erfaring',
+        'job1.title': 'Indkøbspecialist — Direkte materialer',
+        'job1.meta': 'Idealcombi A/S, Horsens · Maj 2021 – nu',
+        'job1.text': 'Ansvarlig for indkøb af glas, aluminium, træ og hardware til vinduesproduktion. Styring af leverandørforhold, kontraktforhandling, RFQ-processer og ESG-compliance, herunder FSC-sporbarhed og CBAM-dokumentation.',
+        'job2.title': 'Kategorikøber / Senior indkøbsassistent',
+        'job2.meta': 'Danco Byggesystemer A/S, Odense · 2016 – 2021',
+        'job2.text': 'Købte aluminiumprofiler til facadevinduer og introducerede leverandørscorecards, OTIF-rapportering og værdibaseret vurdering for at forbedre sourcingresultaterne.',
+        'job3.title': 'Indkøbsassistent',
+        'job3.meta': 'Vestergaard Stål & Profil A/S, Vejle · 2012 – 2016',
+        'job3.text': 'Håndterede ordrekoordinering, leverandørklager og lagerstyring for stål- og aluminiumprofiler i et produktionsorienteret miljø.',
+        'skills.kicker': 'Kompetencer',
+        'skills.title': 'Kernekompetencer',
+        'skill1.title': 'Kategoristyring',
+        'skill1.text': 'Strategisk sourcing og kategoriplanlægning for direkte materialer i produktion.',
+        'skill2.title': 'Leverandørudvikling',
+        'skill2.text': 'Scorecards, leverandørrevisioner, OTIF-forbedring og struktureret kravhåndtering.',
+        'skill3.title': 'Kontraktforhandling',
+        'skill3.text': 'Rammeaftaler og værdisbaseret vurdering for bedre indkøbsresultater.',
+        'skill4.title': 'ESG & Compliance',
+        'skill4.text': 'FSC-sporbarhed, dataindsamling til scope-3 og support til CBAM-dokumentation.',
+        'skill5.title': 'Omkostningsoptimering',
+        'skill5.text': 'Værdiengineering, standardisering af specifikationer og materialeudskiftning.',
+        'skill6.title': 'Systemer & Værktøjer',
+        'skill6.text': 'SAP MM, SAP Ariba, Power BI-analyser og avanceret Excel.',
+        'education.kicker': 'Kvalifikationer',
+        'education.title': 'Uddannelse & certificeringer',
+        'edu1.title': 'HD i Supply Chain Management',
+        'edu1.meta': 'Aarhus BSS, 2014–2017',
+        'edu2.title': 'Logistikøkonom (AP-grad)',
+        'edu2.meta': 'UCL Erhvervsakademi, 2009–2012',
+        'edu3.title': 'HHX',
+        'edu3.meta': 'Vejle Handelsskole, 2004–2007',
+        'cert.title': 'Certificeringer',
+        'cert1': 'ISO 9001:2015 & 14001:2015 Intern revisor',
+        'cert2': 'DIEF Operativ indkøb',
+        'cert3': 'Niels Brock forhandlingsuddannelse',
+        'contact.kicker': 'Kontakt',
+        'contact.title': 'Kontakt',
+        'contact.email_label': 'E-mail',
+        'contact.email_value': 'Send e-mail',
+        'contact.phone_label': 'Telefon'
+      },
+      de: {
+        'hero.location': 'Beschaffungsfachkraft · Horsens, Dänemark',
+        'hero.name': 'Lars Holm',
+        'hero.lead': 'Direktmaterialien-Einkäufer bei Idealcombi A/S mit 10+ Jahren Erfahrung in Beschaffung und Kategorienmanagement. Fokus auf Lieferantenentwicklung, Beschaffungsstrategie und Kostensenkung.',
+        'hero.cta_primary': 'Erfahrung ansehen',
+        'hero.cta_secondary': 'E-Mail senden',
+        'profile.role': 'Beschaffungsfachkraft',
+        'profile.location': 'Horsens',
+        'experience.kicker': 'Karriere',
+        'experience.title': 'Erfahrung',
+        'job1.title': 'Beschaffungsfachkraft — Direktmaterialien',
+        'job1.meta': 'Idealcombi A/S, Horsens · Mai 2021 – heute',
+        'job1.text': 'Verantwortlich für den Einkauf von Glas, Aluminium, Holz und Hardware für die Fensterproduktion. Management von Lieferantenbeziehungen, Vertragsverhandlungen, RFQ-Prozessen und ESG-Compliance, einschließlich FSC-Traceability und CBAM-Dokumentation.',
+        'job2.title': 'Kategoriebuyer / Senior Purchasing Assistant',
+        'job2.meta': 'Danco Byggesystemer A/S, Odense · 2016 – 2021',
+        'job2.text': 'Einkauf von Aluminiumprofilen für Fassadenfenster und Einführung von Lieferanten-Scorecards, OTIF-Berichterstattung und wertorientierter Bewertung zur Verbesserung der Beschaffungsergebnisse.',
+        'job3.title': 'Einkaufsassistent',
+        'job3.meta': 'Vestergaard Stål & Profil A/S, Vejle · 2012 – 2016',
+        'job3.text': 'Bearbeitung von Bestellkoordination, Lieferantenansprüchen und Lagerverwaltung für Stahl- und Aluminiumprofile in einer produktionsorientierten Umgebung.',
+        'skills.kicker': 'Expertise',
+        'skills.title': 'Kernkompetenzen',
+        'skill1.title': 'Kategorienmanagement',
+        'skill1.text': 'Strategische Beschaffung und Kategorienplanung für Direktmaterialien in der Fertigung.',
+        'skill2.title': 'Lieferantenentwicklung',
+        'skill2.text': 'Scorecards, Lieferantenprüfungen, OTIF-Verbesserung und strukturierte Reklamationsbearbeitung.',
+        'skill3.title': 'Vertragsverhandlung',
+        'skill3.text': 'Rahmenverträge und wertorientierte Bewertungen für bessere Einkaufsergebnisse.',
+        'skill4.title': 'ESG & Compliance',
+        'skill4.text': 'FSC-Nachverfolgbarkeit, Datenerhebung für Scope-3 und Unterstützung bei CBAM-Dokumentation.',
+        'skill5.title': 'Kostensenkung',
+        'skill5.text': 'Wertanalyse, Harmonisierung von Spezifikationen und Materialsubstitution.',
+        'skill6.title': 'Systeme & Tools',
+        'skill6.text': 'SAP MM, SAP Ariba, Power BI-Analysen und erweiterte Excel-Berichte.',
+        'education.kicker': 'Qualifikationen',
+        'education.title': 'Ausbildung & Zertifikate',
+        'edu1.title': 'HD in Supply Chain Management',
+        'edu1.meta': 'Aarhus BSS, 2014–2017',
+        'edu2.title': 'Logistikøkonom (AP-Abschluss)',
+        'edu2.meta': 'UCL Erhvervsakademi, 2009–2012',
+        'edu3.title': 'HHX',
+        'edu3.meta': 'Vejle Handelsschule, 2004–2007',
+        'cert.title': 'Zertifikate',
+        'cert1': 'ISO 9001:2015 & 14001:2015 Interner Auditor',
+        'cert2': 'DIEF Operative Beschaffung',
+        'cert3': 'Niels Brock Verhandlungstraining',
+        'contact.kicker': 'Kontakt',
+        'contact.title': 'Kontakt',
+        'contact.email_label': 'E-Mail',
+        'contact.email_value': 'E-Mail senden',
+        'contact.phone_label': 'Telefon'
+      }
+    };
 
-    themeToggle.addEventListener('click', () => {
-      const nextTheme = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      document.body.setAttribute('data-theme', nextTheme);
-      localStorage.setItem('cv-theme', nextTheme);
-      themeToggle.textContent = nextTheme === 'dark' ? '🌙' : '☀️';
+    const savedLang = localStorage.getItem('cv-lang') || 'en';
+    const savedTheme = localStorage.getItem('cv-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+    function applyLanguage(lang) {
+      const dict = translations[lang] || translations.en;
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-i18n]').forEach((el) => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) el.textContent = dict[key];
+      });
+
+      document.querySelectorAll('.lang-btn').forEach((btn) => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+    }
+
+    function applyTheme(theme) {
+      document.body.setAttribute('data-theme', theme);
+      const themeToggle = document.getElementById('themeToggle');
+      themeToggle.textContent = theme === 'dark' ? '🌙' : '☀️';
+      localStorage.setItem('cv-theme', theme);
+    }
+
+    document.querySelectorAll('.lang-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const lang = btn.dataset.lang;
+        localStorage.setItem('cv-lang', lang);
+        applyLanguage(lang);
+      });
     });
 
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      const next = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      applyTheme(next);
+    });
+
+    applyLanguage(savedLang);
+    applyTheme(savedTheme);
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    const portraitCard = document.getElementById('portraitCard');
+    const photoExists = new Image();
+    photoExists.onload = function () {
+      portraitCard.classList.remove('empty');
+    };
+    photoExists.onerror = function () {
+      portraitCard.classList.add('empty');
+    };
+    photoExists.src = 'assets/portrait.jpg';
   </script>
 </body>
 </html>
