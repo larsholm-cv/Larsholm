@@ -16,8 +16,8 @@
   "name": "Lars Holm",
   "jobTitle": "Procurement Specialist",
   "url": "https://larsholm-cv.github.io/",
-  "email": "mailto:larsholm@idealcormbi.com",
-  "telephone": "+45 36 43 87 19",
+  "email": "mailto:hello@larsholm.dk",
+  "telephone": "+45 26 44 87 19",
   "worksFor": { "@type": "Organization", "name": "Idealcombi A/S" }
 }
 </script>
@@ -66,7 +66,6 @@ a:hover { text-decoration: underline; }
   padding: 0 20px;
 }
 
-/* Header & Nav */
 header {
   background: var(--white);
   border-bottom: 1px solid var(--border);
@@ -102,7 +101,6 @@ nav a:hover {
   text-decoration: none;
 }
 
-/* Hero */
 .hero {
   padding: 4rem 0;
   background: linear-gradient(135deg, #f5f5f5 0%, var(--white) 100%);
@@ -148,7 +146,6 @@ nav a:hover {
   margin-bottom: 0.3rem;
 }
 
-/* Sections */
 section {
   padding: 3rem 0;
   border-bottom: 1px solid var(--border);
@@ -166,7 +163,6 @@ section:last-of-type {
   margin-bottom: 1rem;
 }
 
-/* Experience */
 .job-item {
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
@@ -195,7 +191,6 @@ section:last-of-type {
   margin: 0;
 }
 
-/* Skills */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -222,7 +217,6 @@ section:last-of-type {
   color: var(--muted);
 }
 
-/* Education */
 .education-list {
   margin: 0;
   padding-left: 1.2rem;
@@ -242,28 +236,12 @@ section:last-of-type {
   color: var(--muted);
 }
 
-.cert-list {
-  list-style: none;
-  margin: 0.5rem 0 0 0;
-  padding: 0;
-}
-
-.cert-list li {
+.cert-row {
   font-size: 0.9rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
   color: var(--text);
 }
 
-.cert-list li:before {
-  content: "•";
-  color: var(--primary);
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-/* Contact */
 .contact-grid {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -280,7 +258,6 @@ section:last-of-type {
   color: var(--primary);
 }
 
-/* Footer */
 footer {
   background: var(--light);
   padding: 2rem 0;
@@ -290,34 +267,26 @@ footer {
   border-top: 1px solid var(--border);
 }
 
-/* Print Styles */
 @media print {
   header { display: none; }
   section { padding: 1.5rem 0; }
   .quick-facts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.8rem; }
 }
 
-/* Mobile */
 @media (max-width: 640px) {
   h1 { font-size: 1.8rem; }
   h2 { font-size: 1.2rem; }
   
-  nav {
-    display: none;
-  }
+  nav { display: none; }
   
-  .hero {
-    padding: 2rem 0;
-  }
+  .hero { padding: 2rem 0; }
   
   .quick-facts {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.8rem;
   }
   
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
+  .skills-grid { grid-template-columns: 1fr; }
   
   .contact-grid {
     grid-template-columns: auto 1fr;
@@ -344,8 +313,6 @@ footer {
 </header>
 
 <main>
-  
-  <!-- Hero Section -->
   <section class="hero">
     <div class="container">
       <p class="title">Procurement Specialist · Horsens, Denmark</p>
@@ -361,7 +328,6 @@ footer {
     </div>
   </section>
 
-  <!-- Experience Section -->
   <section id="experience">
     <div class="container">
       <p class="section-title">Career</p>
@@ -387,7 +353,6 @@ footer {
     </div>
   </section>
 
-  <!-- Skills Section -->
   <section id="skills">
     <div class="container">
       <p class="section-title">Expertise</p>
@@ -427,7 +392,6 @@ footer {
     </div>
   </section>
 
-  <!-- Education Section -->
   <section id="education">
     <div class="container">
       <p class="section-title">Credentials</p>
@@ -443,17 +407,14 @@ footer {
         </div>
         <div>
           <strong style="color: var(--primary); display: block; margin-bottom: 0.5rem;">Certifications</strong>
-          <ul class="cert-list">
-            <li>ISO 9001:2015 & 14001:2015 Internal Auditor</li>
-            <li>DIEF Operational Procurement</li>
-            <li>Niels Brock Negotiation Training</li>
-          </ul>
+          <div class="cert-row">ISO 9001:2015 & 14001:2015 Internal Auditor</div>
+          <div class="cert-row">DIEF Operational Procurement</div>
+          <div class="cert-row">Niels Brock Negotiation Training</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact">
     <div class="container">
       <p class="section-title">Get in Touch</p>
@@ -461,7 +422,7 @@ footer {
 
       <div class="contact-grid">
         <span class="contact-label">Email</span>
-        <a href="mailto:hello@larsholm.dk">hello@larsholm.dk</a>
+        <a href="mailto:hello@larsholm.dk?subject=Email%20me" title="Email me">Email me</a>
 
         <span class="contact-label">Phone</span>
         <a href="tel:+4526448719">+45 26 44 87 19</a>
