@@ -8,10 +8,30 @@
   <meta property="og:title" content="Lars Holm — Procurement Specialist">
   <meta property="og:description" content="Procurement Specialist | Category Management | Supplier Development">
   <meta property="og:url" content="https://larsholm-cv.github.io/">
+  <meta property="og:image" content="https://larsholm-cv.github.io/assets/portrait.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232d5a3d'/%3E%3Ctext x='32' y='42' font-family='system-ui' font-size='32' font-weight='700' fill='%23fff' text-anchor='middle'%3ELH%3C/text%3E%3C/svg%3E">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Lars Holm",
+    "jobTitle": "Procurement Specialist",
+    "url": "https://larsholm-cv.github.io/",
+    "sameAs": ["https://www.linkedin.com/in/larsholm-procurement"],
+    "worksFor": { "@type": "Organization", "name": "Idealcombi A/S" },
+    "email": "mailto:lars.holm@idealcombi.com",
+    "telephone": "+45 26 44 87 19",
+    "address": { "@type": "PostalAddress",
+      "streetAddress": "Blichervej 23, 3. tv",
+      "postalCode": "8700", "addressLocality": "Horsens",
+      "addressCountry": "DK" },
+    "nationality": "DK",
+    "knowsLanguage": ["da", "en", "de"]
+  }
+  </script>
   <style>
     :root {
       --bg: #f4efe8;
@@ -90,10 +110,17 @@
     }
 
     .logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      background: var(--accent);
+      color: #fff;
       font-weight: 900;
-      letter-spacing: 0.18em;
-      color: var(--accent);
-      font-size: 0.90rem;
+      font-size: 1.05rem;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
     }
 
@@ -208,9 +235,10 @@
     }
 
     .cta-row {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 14px;
+      max-width: 460px;
       margin-top: 30px;
     }
 
@@ -257,15 +285,12 @@
       border: 1px solid rgba(255,255,255,0.25);
     }
 
-    .portrait-card::before {
-      content: "";
+    .portrait-img {
       position: absolute;
       inset: 0;
-      background-image: url('assets/portrait.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      opacity: 0.9;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .portrait-card::after {
@@ -282,7 +307,6 @@
       opacity: 0;
     }
 
-    .portrait-card.empty::before { opacity: 0; }
     .portrait-card.empty::after { opacity: 1; }
 
     .tiny-meta {
@@ -493,7 +517,7 @@
     @media (max-width: 660px) {
       nav { display: none; }
       .topbar { padding-left: 18px; padding-right: 18px; }
-      .cta-row { flex-direction: column; align-items: flex-start; }
+      .cta-row { grid-template-columns: 1fr; }
       .job-head { flex-direction: column; }
     }
   </style>
@@ -528,12 +552,16 @@
           <p class="lede" data-i18n="hero.lead">Direct-materials buyer at Idealcombi A/S with 10+ years in procurement and category management. Focused on supplier development, sourcing strategy, and cost optimization.</p>
           <div class="cta-row">
             <a class="btn btn-primary" href="#experience" data-i18n="hero.cta_primary">View experience</a>
-            <a class="btn btn-secondary" href="#contact" title="Contact me" data-i18n="hero.cta_secondary">Contact me</a>
+            <a class="btn btn-secondary" href="#contact" data-i18n="hero.cta_secondary">Contact me</a>
           </div>
         </div>
 
         <div class="portrait-panel">
-          <div class="portrait-card empty" id="portraitCard" aria-label="Lars Holm portrait"></div>
+          <div class="portrait-card" id="portraitCard" aria-label="Lars Holm portrait">
+            <img class="portrait-img" src="assets/portrait.jpg"
+                 alt="Lars Holm, procurement specialist"
+                 onerror="this.closest('.portrait-card').classList.add('empty'); this.remove();">
+          </div>
           <div class="tiny-meta">
             <span data-i18n="profile.role">Procurement Specialist</span>
             <span data-i18n="profile.location">Horsens</span>
@@ -619,11 +647,11 @@
         <div class="contact-wrap">
           <div class="contact-item">
             <span data-i18n="contact.email_label">Email</span>
-            <a href="mailto:Larsholm@idealcornbi.com" title="Email me"</a>
+            <a href="mailto:lars.holm@idealcombi.com" data-i18n="contact.email_value">Email me</a>
           </div>
           <div class="contact-item">
             <span data-i18n="contact.phone_label">Phone</span>
-            <a href="tel:+4526448719">+45 26448719</a>
+            <a href="tel:+4526448719">+45 26 44 87 19</a>
           </div>
         </div>
       </div>
@@ -639,7 +667,7 @@
         'hero.name': 'Lars Holm',
         'hero.lead': 'Direct-materials buyer at Idealcombi A/S with 10+ years in procurement and category management. Focused on supplier development, sourcing strategy, and cost optimization.',
         'hero.cta_primary': 'View experience',
-        'hero.cta_secondary': 'Contact me',2
+        'hero.cta_secondary': 'Contact me',
         'profile.role': 'Procurement Specialist',
         'profile.location': 'Horsens',
         'experience.kicker': 'Career',
@@ -690,7 +718,7 @@
         'hero.name': 'Lars Holm',
         'hero.lead': 'Direkte materialer-køber hos Idealcombi A/S med 10+ års erfaring inden for indkøb og kategoristyring. Fokus på leverandørudvikling, sourcing-strategi og omkostningsoptimering.',
         'hero.cta_primary': 'Se erfaring',
-        'hero.cta_secondary': 'Send e-mail',
+        'hero.cta_secondary': 'Kontakt mig',
         'profile.role': 'Indkøbspecialist',
         'profile.location': 'Horsens',
         'experience.kicker': 'Karriere',
@@ -711,7 +739,7 @@
         'skill2.title': 'Leverandørudvikling',
         'skill2.text': 'Scorecards, leverandørrevisioner, OTIF-forbedring og struktureret kravhåndtering.',
         'skill3.title': 'Kontraktforhandling',
-        'skill3.text': 'Rammeaftaler og værdisbaseret vurdering for bedre indkøbsresultater.',
+        'skill3.text': 'Rammeaftaler og værdibaseret vurdering for bedre indkøbsresultater.',
         'skill4.title': 'ESG & Compliance',
         'skill4.text': 'FSC-sporbarhed, dataindsamling til scope-3 og support til CBAM-dokumentation.',
         'skill5.title': 'Omkostningsoptimering',
@@ -733,7 +761,7 @@
         'contact.kicker': 'Kontakt',
         'contact.title': 'Kontakt',
         'contact.email_label': 'E-mail',
-        'contact.email_value': 'Send e-mail',
+        'contact.email_value': 'Skriv til mig',
         'contact.phone_label': 'Telefon'
       },
       de: {
@@ -741,7 +769,7 @@
         'hero.name': 'Lars Holm',
         'hero.lead': 'Direktmaterialien-Einkäufer bei Idealcombi A/S mit 10+ Jahren Erfahrung in Beschaffung und Kategorienmanagement. Fokus auf Lieferantenentwicklung, Beschaffungsstrategie und Kostensenkung.',
         'hero.cta_primary': 'Erfahrung ansehen',
-        'hero.cta_secondary': 'E-Mail senden',
+        'hero.cta_secondary': 'Kontakt aufnehmen',
         'profile.role': 'Beschaffungsfachkraft',
         'profile.location': 'Horsens',
         'experience.kicker': 'Karriere',
@@ -784,7 +812,7 @@
         'contact.kicker': 'Kontakt',
         'contact.title': 'Kontakt',
         'contact.email_label': 'E-Mail',
-        'contact.email_value': 'E-Mail senden',
+        'contact.email_value': 'E-Mail schreiben',
         'contact.phone_label': 'Telefon'
       }
     };
@@ -828,16 +856,6 @@
     applyLanguage(savedLang);
     applyTheme(savedTheme);
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    const portraitCard = document.getElementById('portraitCard');
-    const photoExists = new Image();
-    photoExists.onload = function () {
-      portraitCard.classList.remove('empty');
-    };
-    photoExists.onerror = function () {
-      portraitCard.classList.add('empty');
-    };
-    photoExists.src = 'assets/portrait.jpg';
   </script>
 </body>
 </html>
