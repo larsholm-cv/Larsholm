@@ -242,6 +242,27 @@ section:last-of-type {
   color: var(--muted);
 }
 
+.cert-list {
+  list-style: none;
+  margin: 0.5rem 0 0 0;
+  padding: 0;
+}
+
+.cert-list li {
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  color: var(--text);
+}
+
+.cert-list li:before {
+  content: "•";
+  color: var(--primary);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
 /* Contact */
 .contact-grid {
   display: grid;
@@ -421,12 +442,12 @@ footer {
           </ul>
         </div>
         <div>
-          <strong style="color: var(--primary);">Certifications</strong>
-          <p style="font-size: 0.9rem; margin-top: 0.5rem;">
-            • ISO 9001:2015 & 14001:2015 Internal Auditor<br>
-            • DIEF Operational Procurement<br>
-            • Niels Brock Negotiation Training
-          </p>
+          <strong style="color: var(--primary); display: block; margin-bottom: 0.5rem;">Certifications</strong>
+          <ul class="cert-list">
+            <li>ISO 9001:2015 & 14001:2015 Internal Auditor</li>
+            <li>DIEF Operational Procurement</li>
+            <li>Niels Brock Negotiation Training</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -444,12 +465,6 @@ footer {
 
         <span class="contact-label">Phone</span>
         <a href="tel:+4526448719">+45 26 44 87 19</a>
-
-        <span class="contact-label">Location</span>
-        <span>Horsens, Denmark</span>
-
-        <span class="contact-label">LinkedIn</span>
-        <a href="https://linkedin.com/in/larsholm-procurement">larsholm-procurement</a>
       </div>
     </div>
   </section>
